@@ -1,0 +1,7 @@
+CUS001,Abc,0112345678,abc@gmail.com,26 Tbn, A, B, C
+CUS003,Manchester,0123456789,mu@gmail.com,23 D, A, B, C
+CUS008,Real Madrid,0987654321,real@gmail.com,23 V, V, B, Madrid
+CUS100,Sgu,0123456789,sgu@gmail.com,275, A, B, Hcm
+CUS999,Abc,0123456789,ab@gmail.com,273 Adv, 3, 5, Hcm
+CUS077,Abc,0123456789,abc@gmail.com,273, 2, 3, Hcm
+CUS012,Ac,0123456789,ac@gmail.com,1, 12, 3, 1
