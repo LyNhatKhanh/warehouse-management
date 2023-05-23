@@ -36,7 +36,7 @@ public class TonKhoDisplay{
 	public static void nhap() throws IOException {
 		System.out.println("Nhập số tiền vốn : ");
 		TonKhoDisplay.giaVon = giaChecking();
-		File tien = new File("../TienVon.txt");
+		File tien = new File("TienVon.txt");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(tien));
 		bw.write(String.valueOf(giaVon));
 		bw.newLine();
@@ -44,7 +44,7 @@ public class TonKhoDisplay{
 	}
 	//đọc giá vốn
 	public static void readGiaVon() {
-		File tien = new File("../TienVon.txt");
+		File tien = new File("TienVon.txt");
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(tien));
 			String line = "";
@@ -69,7 +69,7 @@ public class TonKhoDisplay{
 	//đọc file hàng hóa
 	public static void readFromFile_HangHoa() throws IOException {
 		try {
-			FileReader fr = new FileReader("../HangHoa.txt");
+			FileReader fr = new FileReader("HangHoa.txt");
 			try {
 				BufferedReader br = new BufferedReader(fr);
 				String line = "";

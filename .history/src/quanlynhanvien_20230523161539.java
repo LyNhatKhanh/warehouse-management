@@ -19,7 +19,7 @@ public class quanlynhanvien {
         boolean cont = true;
         boolean cont1 = true;
         try {
-            FileWriter fw = new FileWriter("../NhanVien.txt", true);
+            FileWriter fw = new FileWriter("NhanVien.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
 
             do {
@@ -89,14 +89,14 @@ public class quanlynhanvien {
     
     // đọc dữ liệu từ file
     public void readFromFile() throws IOException {
-    	File temp = new File("../NhanVien.txt");
+    	File temp = new File("NhanVien.txt");
 		BufferedReader br_temp = new BufferedReader(new FileReader(temp));
 		String line1 = "";
 		line1 = br_temp.readLine();
 		if(line1 == null){
 			System.out.println("Hiện không có dữ liệu, dữ liệu mặc định sẽ được tải xuống..........");
 			try {
-				File phieunhap = new File("../NhanVien_Default.txt");
+				File phieunhap = new File("NhanVien_Default.txt");
 				BufferedReader brn = new BufferedReader(new FileReader(phieunhap));
 				String line = "";
 				while(true) {
@@ -120,7 +120,7 @@ public class quanlynhanvien {
 		}
 		
         try {
-            FileReader file = new FileReader("../NhanVien.txt");
+            FileReader file = new FileReader("NhanVien.txt");
             try {
                 BufferedReader br = new BufferedReader(file);
                 String line = "";
@@ -241,7 +241,7 @@ public class quanlynhanvien {
         try {
             FileWriter fw;
             BufferedWriter bw;
-            File file = new File("../NhanVien.txt");
+            File file = new File("NhanVien.txt");
             do {
                 NhanVien nv = new NhanVien();
                 nv.input_MaNhanVien();
@@ -262,7 +262,7 @@ public class quanlynhanvien {
                     }
                 }
                 file.delete();
-                fw = new FileWriter("../NhanVien.txt", true);
+                fw = new FileWriter("NhanVien.txt", true);
                 bw = new BufferedWriter(fw);
                 for (int i = 0; i < list.size(); i++) {
                     nv = list.get(i);
@@ -296,7 +296,7 @@ public class quanlynhanvien {
         try {
             FileWriter fw;
             BufferedWriter bw;
-            File file = new File("../NhanVien.txt");
+            File file = new File("NhanVien.txt");
             do {
                 NhanVien nv = new NhanVien();
                 nv.input_MaNhanVien();
@@ -317,7 +317,7 @@ public class quanlynhanvien {
                     }
                 }
                 file.delete();
-                fw = new FileWriter("../NhanVien.txt", true);
+                fw = new FileWriter("NhanVien.txt", true);
                 bw = new BufferedWriter(fw);
                 for (int i = 0; i < list.size(); i++) {
                     nv = list.get(i);

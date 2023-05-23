@@ -39,7 +39,7 @@ public class PhieuXuat extends Phieu implements CheckingFormat{
 	//đọc file chi tiết phiếu xuất
 	public void readFromFile() throws IOException {
 		try {
-			FileReader fr = new FileReader("../ChiTietPhieuXuat.txt");
+			FileReader fr = new FileReader("ChiTietPhieuXuat.txt");
 			try {
 				BufferedReader br = new BufferedReader(fr);
 				String line = "";
@@ -84,7 +84,7 @@ public class PhieuXuat extends Phieu implements CheckingFormat{
 	//đọc file từ phiếu xuất
 	public void readFromFile_PX() throws IOException {
 		try {
-			FileReader fr = new FileReader("../Phieu.txt");
+			FileReader fr = new FileReader("Phieu.txt");
 			try {
 				BufferedReader br = new BufferedReader(fr);
 				String line = "";
